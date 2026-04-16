@@ -1,0 +1,29 @@
+Git File Workflow
+1. Working Directory
+	• This is your actual project folder on your computer.
+	• Example: index.html is created and edited here.
+	• Files here can be untracked (new) or modified (changed since last commit).
+2. Staging / Index Area
+	• A conceptual space where you prepare changes before committing.
+	• You add files here using:
+	git add index.html 
+	• Think of it as a “shopping cart” — you select which changes you want to commit.
+	• Example: index.html → staged as index.html v1.0.
+3. Local Repository
+	• Stored in the hidden .git folder inside your project.
+	• Once you commit:
+	git commit -m "Add index.html v1.0" 
+	• The file and its history are permanently recorded locally.
+	• You can view history with:
+git log 
+4. Remote Server
+	• A shared repository hosted on GitHub, GitLab, or Bitbucket.
+	• You push commits from your local repo to the remote:
+	git push origin master 
+	• This enables collaboration with teammates.
+📂 Example Flow with index.html
+	1. Create file in Working Directory → index.html.
+	2. Stage file in Index Area → git add index.html.
+	3. Commit to Local Repository → git commit -m "Initial version index.html v1.0".
+	4. Push to Remote Server → git push origin master.
+✅ Key correction: The Staging Area is not a physical folder — it’s a logical layer managed by Git. You interact with it through the Git client (git add, git status, etc.).
